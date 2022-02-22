@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM & BOM</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    
+    <header class="py-4" style="background-color: #f6f7f8;">
+        <div class="container">
+            <div class="col-lg-12 d-flex justify-content-end">
+
+                <div onclick="Search()" class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <span class="ps-2">Axtarış</span>
+                </div>
+
+                <div onclick="Lang()" class="lang mx-4">
+                    <span class="pe-2">AZ</span>
+                    <i id="angel" class="fas fa-angle-down"></i>
+
+                    <div id="options">
+                        <p>EN</p>
+                        <p>RU</p>
+                    </div>
+
+                </div>
+
+                <div class="phone">
+                    <i id="phones" class="fa-solid fa-phone"></i>
+                    <a href="tel:0513834993">0513834993</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div id="search-section">
+        <input type="text" placeholder="Search...">
+        <span style="cursor: pointer;">X</span>
+    </div>
+
+   
+</body>
+    <script src="js/app.js"></script>
+</html>

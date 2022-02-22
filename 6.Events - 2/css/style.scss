@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+.search-bar{
+  cursor: pointer;
+}
+#search-section{
+  background-color: aqua;
+  opacity: 0;
+  transition: .4s;
+  input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 80%;
+    font-size: 25px;
+    padding: 5rem 5px;
+  }
+}
+
+.active{
+  opacity: 1 !important;
+}
+
+i{
+  transition: .4s;
+}
+
+.angel{
+  transform: rotate(180deg);
+}
+
+.lang{
+  position: relative;
+  cursor: pointer;
+  #options{
+    position: absolute;
+    left: -100px;
+    opacity: 0;
+    transition: .4s;
+    top: 40px;
+    background-color: #fff;
+    width: 150px;
+    box-shadow: -1px 1px 3px 3px #e0dfdf;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      height: 20px;
+      right: 10px;
+      top: -16px;
+    background-color: white;
+    }
+  }
+}
+
+#phones{
+  animation: phone 1s linear infinite;
+}
+
+@keyframes phone {
+    25%{
+      transform: rotate(10deg);
+    }
+
+    50%{
+      transform:  rotate(0);
+    }
+    75%{
+      transform: rotate(10deg);
+    }
+    100%{
+      transform: rotate(0);
+    }
+}
